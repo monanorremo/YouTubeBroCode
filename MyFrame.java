@@ -15,9 +15,9 @@ public class MyFrame extends JFrame implements ActionListener{
   this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   this.setLayout(new FlowLayout());
   
-  //pizzaIcon = new ImageIcon("pizza.png");
-  //hamburgerIcon = new ImageIcon("hamburger.png");
-  //hotdogIcon = new ImageIcon("hotdog.png");
+  pizzaIcon = new ImageIcon("pizza.png");
+  hamburgerIcon = new ImageIcon("hamburger.png");
+  hotdogIcon = new ImageIcon("hotdog.png");
   
   pizzaButton = new JRadioButton("pizza");
   hamburgerButton = new JRadioButton("hamburger");
@@ -32,9 +32,9 @@ public class MyFrame extends JFrame implements ActionListener{
   hamburgerButton.addActionListener(this);
   hotdogButton.addActionListener(this);
   
-  //pizzaButton.setIcon(pizzaIcon);
-  //hamburgerButton.setIcon(hamburgerIcon);
-  //hotdogButton.setIcon(hotdogIcon);
+  pizzaButton.setIcon(pizzaIcon);
+  hamburgerButton.setIcon(hamburgerIcon);
+  hotdogButton.setIcon(hotdogIcon);
   
   this.add(pizzaButton);
   this.add(hamburgerButton);
